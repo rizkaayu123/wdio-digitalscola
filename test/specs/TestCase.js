@@ -14,16 +14,16 @@ describe('Test Case',() => {
         await loginButton.click()
 
         await browser.pause(100000)
-
-        it('Test Case 2 - Add item to cart',async () => {
-
-            await expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html')
-    
-            const additem = await browser.$('#add-to-cart-sauce-labs-backpack')
-            await loginButton.click()
-    
-            await browser.pause(100000)
-    
-
     })
+
+    it('Test Case 2 - Add item to cart',async () => {
+
+        await expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html')
+
+        const additem = await browser.$('#add-to-cart-sauce-labs-backpack')
+        await loginButton.click()
+
+        await browser.pause(100000)
+
+})
 })
